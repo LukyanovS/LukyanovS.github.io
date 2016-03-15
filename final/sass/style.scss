@@ -1,12 +1,21 @@
 @import "_normalize.scss";
 
 $nav_bg_color: rgba(16,22,54,.2);
+$font: 16;
+$light: 300;
+$bold: 700;
+$px: px;
+$imagedir:'../img/';
 
-%bg-image {
-    width: 100%;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+@mixin bg_i($filename,$position:center center,$repeat: no-repeat) {
+    background: transparent url(#{$imagedir}#{$filename}) $repeat $position;
+}
+
+body{
+    font-family: "Open Sans", Arial, Sans-sarif;
+    font-size: $font+$px;
+    color: #fff;
+    text-align: center;
 }
 
 .nav{
@@ -14,7 +23,38 @@ $nav_bg_color: rgba(16,22,54,.2);
 }
 
 .banner {
-    @extend %bg-image;
-    background-image: url("../img/banner.png");
-    
+    @include bg_i("banner.png");
+    background-size: cover;
+    p {
+        margin-top: 21+$px;
+        margin-left: 5+$px;
+        font-size: $font+2+$px;
+        @include bg_i("banner-h2.png");
+        font-weight: $light;
+    }
+}
+
+h1 {
+    font-size: $font*3.875+$px;
+    font-weight: $light;
+    margin-top: 453+$px;
+    span {
+        font-weight: $bold;
+    }
+}
+
+h2{
+    font-weight: $light;
+    font-size: $font*3+$px;
+    margin-top: 5+$px;
+    margin-left: 5+$px;
+}
+
+.social_btn{
+    margin-top: 105+$px;
+    a{
+        padding: 0 10px;
+        @include bg_i("social_btn.png");
+        background-position: 0 100%;
+    }
 }

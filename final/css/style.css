@@ -151,7 +151,7 @@ dfn {
 /* line 145, ../sass/_normalize.scss */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /**
@@ -441,20 +441,59 @@ optgroup {
   font-weight: bold;
 }
 
-/* line 5, ../sass/style.scss */
-.banner {
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+/* line 14, ../sass/style.scss */
+body {
+  font-family: "Open Sans", Arial, Sans-sarif;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
 }
 
-/* line 12, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 .nav {
   background: rgba(16, 22, 54, 0.2);
 }
 
-/* line 16, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 .banner {
-  background-image: url("../img/banner.png");
+  background: transparent url(../img/banner.png) no-repeat center center;
+  background-size: cover;
+}
+/* line 28, ../sass/style.scss */
+.banner p {
+  margin-top: 21px;
+  margin-left: 5px;
+  font-size: 18px;
+  background: transparent url(../img/banner-h2.png) no-repeat center center;
+  font-weight: 300;
+}
+
+/* line 37, ../sass/style.scss */
+h1 {
+  font-size: 62px;
+  font-weight: 300;
+  margin-top: 453px;
+}
+/* line 41, ../sass/style.scss */
+h1 span {
+  font-weight: 700;
+}
+
+/* line 46, ../sass/style.scss */
+h2 {
+  font-weight: 300;
+  font-size: 48px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+/* line 53, ../sass/style.scss */
+.social_btn {
+  margin-top: 105px;
+}
+/* line 55, ../sass/style.scss */
+.social_btn a {
+  padding: 0 10px;
+  background: transparent url(../img/social_btn.png) no-repeat center center;
+  background-position: 0 100%;
 }
