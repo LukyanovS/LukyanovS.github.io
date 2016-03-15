@@ -1,0 +1,20 @@
+@import "_normalize.scss";
+
+$nav_bg_color: rgba(16,22,54,.2);
+
+%bg-image {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav{
+    background: $nav_bg_color;
+}
+
+.banner {
+    @extend %bg-image;
+    background-image: url("../img/banner.png");
+    
+}
