@@ -490,8 +490,9 @@ h2 {
 /* line 53, ../sass/style.scss */
 .social_btn {
   margin-top: 105px;
+  margin-bottom: 50px;
 }
-/* line 55, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .social_btn a {
   padding: 0 10px;
   background: transparent url(../img/social_btn.png) no-repeat center center;

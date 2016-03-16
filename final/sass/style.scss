@@ -52,6 +52,7 @@ h2{
 
 .social_btn{
     margin-top: 105+$px;
+	margin-bottom: 50+$px;
     a{
         padding: 0 10px;
         @include bg_i("social_btn.png");
