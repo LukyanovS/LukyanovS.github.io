@@ -626,18 +626,18 @@ h3 {
 /* line 157, ../sass/style.scss */
 .heart {
   color: #cdcfd1;
-  margin-bottom: 62px;
 }
 
-/* line 162, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .feature {
   background: #f4f7f9;
 }
-/* line 164, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .feature span {
   display: block;
   background: transparent url(../img/heart_bg.png) no-repeat center center;
   background-position: center 11px;
+  margin-bottom: 62px;
 }
 
 /* line 171, ../sass/style.scss */
@@ -808,4 +808,76 @@ h4 {
 /* line 312, ../sass/style.scss */
 .carousel.vertical .item {
   left: 0;
+}
+
+/* line 317, ../sass/style.scss */
+#works span {
+  display: block;
+  background: transparent url(../img/heart_bg.png) no-repeat center center;
+  background-position: center 11px;
+  margin-bottom: 27px;
+}
+/* line 323, ../sass/style.scss */
+#works p {
+  color: rgba(6, 32, 51, 0.8);
+  font-size: 18px;
+  font-weight: 600;
+}
+/* line 328, ../sass/style.scss */
+#works ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+/* line 19, ../sass/style.scss */
+#works ul > li {
+  display: inline-block;
+  float: right;
+  text-align: center;
+}
+/* line 23, ../sass/style.scss */
+#works ul > li:last-child {
+  margin-right: 0px;
+}
+/* line 26, ../sass/style.scss */
+#works ul > li > a {
+  display: block;
+  text-decoration: none;
+}
+/* line 330, ../sass/style.scss */
+#works ul li {
+  float: none;
+  margin: 37px 5px;
+}
+/* line 333, ../sass/style.scss */
+#works ul li a {
+  color: #062033;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+/* line 339, ../sass/style.scss */
+#works ul li a:hover, #works ul li a:focus, #works ul li a:active {
+  color: #fff;
+  background: #0eb493;
+  outline: none;
+}
+
+/* line 350, ../sass/style.scss */
+#work_pic .col-lg-3 {
+  padding: 0;
+  margin: 0;
+}
+/* line 353, ../sass/style.scss */
+#work_pic .col-lg-3 > a {
+  height: 300px;
+}
+/* line 355, ../sass/style.scss */
+#work_pic .col-lg-3 > a > img {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 300px;
 }
