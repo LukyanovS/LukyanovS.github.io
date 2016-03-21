@@ -131,87 +131,25 @@
                     <h3>works</h3>
                     <span><i class="fa fa-heart-o heart"></i></span>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam<br>rem aperiam, eaque ipsa quae ab illo inventore</p>
-                    <ul>
-                        <li>
-                            <a href="#">All</a>
-                        </li>
-                        <li>
-                            <a href="#">Branding</a>
-                        </li>
-                        <li>
-                            <a href="#">Web</a>
-                        </li>
-                        <li>
-                            <a href="#">Logo Design</a>
-                        </li>
-                        <li>
-                            <a href="#">Photography</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </section>
         
         <section id="work_pic" class="container-fluid">
-<!--
-            <a href="#">
-                <img src="img/work_pic1.png" alt="work_pic1"></a>
-            <a href="#">
-                <img src="img/work_pic2.png" alt="work_pic2"></a>
-            <a href="#">
-                <img src="img/work_pic3.png" alt="work_pic3"></a>
-            <a href="#">
-                <img src="img/work_pic4.png" alt="work_pic4"></a>
-            <a href="#">
-                <img src="img/work_pic5.png" alt="work_pic5"></a>
-            <a href="#">
-                <img src="img/work_pic6.png" alt="work_pic6"></a>
-            <a href="#">
-                <img src="img/work_pic7.png" alt="work_pic7"></a>
-            <a href="#">
-                <img src="img/work_pic8.png" alt="work_pic8"></a>
--->
-            <div class="row">
-            <div class="col-lg-3">
-                <a href="#">
-                    <img src="img/work_pic1.png" alt="work_pic1">
-                </a>
+            <div class="controls">
+              <button class="filter" data-filter="all" autofocus="autofocus">All</button>
+              <button class="filter" data-filter=".category-1">Branding</button>
+              <button class="filter" data-filter=".category-2">Web</button>
+              <button class="filter" data-filter=".category-3">Logo Design</button>
+              <button class="filter" data-filter=".category-4">Photography</button>
             </div>
-            <div class="col-lg-3">
-                <a href="#">
-                    <img src="img/work_pic2.png" alt="work_pic2">
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="#">
-                    <img src="img/work_pic3.png" alt="work_pic3">
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="#">
-                    <img src="img/work_pic4.png" alt="work_pic4">
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="#">
-                    <img src="img/work_pic5.png" alt="work_pic5">
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="#">
-                    <img src="img/work_pic6.png" alt="work_pic6">
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="#">
-                    <img src="img/work_pic7.png" alt="work_pic7">
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="#">
-                    <img src="img/work_pic8.png" alt="work_pic8">
-                </a>
-            </div>
+            <div id="Container" class="conrainer">
+              <div class="mix category-1 category-3" data-myorder="1"><img src="img/work_pic1.png" alt="1"></div>
+              <div class="mix category-2" data-myorder="2"><img src="img/work_pic2.png" alt="2"></div>
+              <div class="mix category-4" data-myorder="3"><img src="img/work_pic3.png" alt="3"></div>
+              <div class="mix category-2 category-1" data-myorder="4"><img src="img/work_pic4.png" alt="4"></div>
+              <div class="mix category-4" data-myorder="5"><img src="img/work_pic5.png" alt="5"></div>
+              <div class="mix category-3" data-myorder="6"><img src="img/work_pic6.png" alt="6"></div>
+              <div class="mix category-2" data-myorder="7"><img src="img/work_pic7.png" alt="7"></div>
+              <div class="mix category-2" data-myorder="8"><img src="img/work_pic8.png" alt="8"></div>
             </div>
         </section>
         
@@ -240,6 +178,8 @@
         <script src="js/jquery-1.12.1.js"></script>
         
         <script src="js/bootstrap.js"></script>
+        
+        <script src="js/jquery.mixitup.min.js"></script>
         
         <script src="js/wow.js"></script>
         
