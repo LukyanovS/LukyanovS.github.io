@@ -12,7 +12,7 @@ $(document).ready(function() {
     var flag = false;
     
     $(window).scroll(function(){
-        if (flag == false && $('body').scrollTop() >= topFuns - 400  ){
+        if (flag == false && $('body').scrollTop() >= topFuns - 600  ){
             flag = true;
                 $('#one')
                   .prop('number', 3000)

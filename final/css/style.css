@@ -811,14 +811,14 @@ h4 {
 }
 
 /* line 317, ../sass/style.scss */
-#works span, #team span {
+#works span, #team span, #contact span {
   display: block;
   background: transparent url(../img/heart_bg.png) no-repeat center center;
   background-position: center 11px;
   margin-bottom: 27px;
 }
 /* line 323, ../sass/style.scss */
-#works p, #team p {
+#works p, #team p, #contact p {
   color: rgba(6, 32, 51, 0.8);
   font-size: 18px;
   font-weight: 600;
@@ -981,7 +981,7 @@ h4 {
   transition-duration: 1s;
 }
 /* line 464, ../sass/style.scss */
-#team p {
+#team .specialty {
   color: #b6babd;
   font-size: 13px;
 }
@@ -1020,22 +1020,23 @@ h4 {
 }
 /* line 496, ../sass/style.scss */
 .team_social > a:hover {
-  background: #000;
+  background: #0eb493;
 }
 
 /* line 502, ../sass/style.scss */
 #funs {
   background: transparent url(../img/funs_bg.png) no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
 }
-/* line 505, ../sass/style.scss */
+/* line 506, ../sass/style.scss */
 #funs span {
   display: block;
   background: transparent url(../img/heart_bg.png) no-repeat center center;
   background-position: center 11px;
   margin-bottom: 22px;
 }
-/* line 511, ../sass/style.scss */
+/* line 512, ../sass/style.scss */
 #funs .funs_icon {
   width: 130px;
   height: 130px;
@@ -1043,22 +1044,119 @@ h4 {
   border: 1px solid #cdcfd1;
   margin: 0 auto 50px;
 }
-/* line 517, ../sass/style.scss */
+/* line 518, ../sass/style.scss */
 #funs .funs_icon i {
   font-size: 40px;
   padding-top: 45px;
 }
 
-/* line 524, ../sass/style.scss */
+/* line 525, ../sass/style.scss */
 .funs {
   text-transform: uppercase;
   font-size: 16px;
   color: #c0c4c8;
   font-weight: 100;
+  margin-bottom: 150px;
 }
 
-/* line 531, ../sass/style.scss */
+/* line 533, ../sass/style.scss */
 #one, #two, #three, #four {
   font-size: 38px;
   margin: 0;
+}
+
+/* line 539, ../sass/style.scss */
+#contact span {
+  margin-bottom: 35px;
+}
+/* line 541, ../sass/style.scss */
+#contact span + p {
+  margin-bottom: 80px;
+}
+/* line 545, ../sass/style.scss */
+#contact h6 {
+  color: #062033;
+  font-size: 24px;
+  font-weight: 100;
+  text-align: left;
+  line-height: 1.4;
+}
+/* line 551, ../sass/style.scss */
+#contact h6 + p {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #92989e;
+  text-align: left;
+}
+
+/* line 561, ../sass/style.scss */
+footer {
+  background: #1ea78d;
+  text-align: left;
+  padding-top: 100px;
+}
+/* line 565, ../sass/style.scss */
+footer .padding {
+  padding: 0;
+}
+/* line 568, ../sass/style.scss */
+footer span {
+  font-family: "Pacifico", "Open Sans", Arial, Sans-sarif;
+  font-size: 30px;
+  color: #fff;
+  font-weight: normal;
+  display: block;
+  margin-bottom: 25px;
+}
+/* line 575, ../sass/style.scss */
+footer span + p {
+  margin-bottom: 125px;
+}
+/* line 579, ../sass/style.scss */
+footer .div {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  width: 90%;
+  float: left;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  height: 45px;
+}
+/* line 587, ../sass/style.scss */
+footer .div input {
+  height: 100%;
+  width: 90%;
+  background: transparent;
+  border: 0;
+  outline: none;
+  padding: 5px;
+  font-size: 20px;
+}
+/* line 596, ../sass/style.scss */
+footer .div i {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+}
+/* line 599, ../sass/style.scss */
+footer .div i:hover {
+  color: #fff;
+}
+
+/* line 606, ../sass/style.scss */
+.footer_content {
+  padding-top: 15px;
+  font-size: 13px;
+  color: #f0f9f7;
+  line-height: 1.7;
+}
+
+/* line 613, ../sass/style.scss */
+.div50 {
+  width: 49%;
+  display: inline-block;
+  margin-top: 30px;
+}
+/* line 617, ../sass/style.scss */
+.div50 > p {
+  line-height: 0.3;
 }

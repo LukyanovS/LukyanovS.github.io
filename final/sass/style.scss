@@ -313,7 +313,7 @@ h4{
     left: 0;
 }
 
-#works, #team{
+#works, #team, #contact{
     span{
         display: block;
         @include bg_i("heart_bg.png");
@@ -461,7 +461,7 @@ h4{
         -moz-transition-duration: 1s; 
         transition-duration: 1s;
     }
-    p{
+    .specialty{
         color: #b6babd;
         font-size: 13px;
     }
@@ -494,7 +494,7 @@ h4{
         width: 42px;
         height: 42px;
         &:hover{
-            background: #000;
+            background: #0eb493;
         }
     }
 }
@@ -502,6 +502,7 @@ h4{
 #funs{
     @include bg_i("funs_bg.png");
     background-size: cover;
+    background-attachment: fixed;
     span{
         display: block;
         @include bg_i("heart_bg.png");
@@ -526,9 +527,94 @@ h4{
     font-size: 16px;
     color: #c0c4c8;
     font-weight: 100;
+    margin-bottom: 150px;
 }
 
 #one, #two, #three, #four{
     font-size: 38px;
     margin: 0;
+}
+
+#contact{
+    span{
+        margin-bottom: 35px;
+        +p{
+            margin-bottom: 80px;
+        }
+    }
+    h6{
+        color: #062033;
+        font-size: 24px;
+        font-weight: 100;
+        text-align: left;
+        line-height: 1.4;
+        +p{
+            margin-top:30px;
+            font-size: 16px;
+            color: #92989e;
+            text-align: left;
+        }
+    }
+    
+}
+
+footer{
+    background: #1ea78d;
+    text-align: left;
+    padding-top: 100px;
+    .padding{
+        padding: 0;
+    }
+    span{
+        font-family: "Pacifico", "Open Sans", Arial, Sans-sarif;
+        font-size: 30px;
+        color: #fff;   
+        font-weight: normal;
+        display: block;
+        margin-bottom: 25px;  
+        +p{
+            margin-bottom: 125px;
+        }
+    }
+    .div{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        width: 90%;
+        float: left;
+        border-radius: 3px;
+        border: 1px solid #fff;
+        height: 45px;
+        input{
+            height: 100%;
+            width: 90%;
+            background: transparent;
+            border: 0;
+            outline: none;
+            padding: 5px;
+            font-size: 20px;
+        }
+        i{
+            color: rgba(255,255,255,0.5);
+            font-size: 20px;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.footer_content{
+    padding-top: 15px;
+    font-size: 13px;
+    color: #f0f9f7;
+    line-height: 1.7;
+}
+
+.div50{
+    width: 49%;
+    display: inline-block;
+    margin-top: 30px;
+    >p{
+        line-height: 0.3;
+    }
 }
