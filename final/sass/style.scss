@@ -42,10 +42,6 @@ body{
     background: $nav_bg_color;
     span{
         margin-left: 12px;
-        font-family: "Pacifico", "Open Sans", Arial, Sans-sarif;
-        font-size: 30px;
-        color: #fff;   
-        font-weight: normal;
     }
     b{
         color: rgba(46,162,218,.3);
@@ -289,24 +285,30 @@ h4{
 }
 
 .carousel.vertical .next {
-  top: 100%;
+    padding-left:30px;
+    text-align:center;
+    top: 100%;
 }
 
 .carousel.vertical .prev {
-  top: -100%;
+    padding-left:30px;
+    text-align:center;
+    top: -100%;
 }
 
 .carousel.vertical .next.left,
 .carousel.vertical .prev.right {
-  top: 0;
+    padding-left:30px;
+    text-align:center;
+    top: 0;
 }
 
 .carousel.vertical .active.left {
-  top: -100%;
+    top: -100%;
 }
 
 .carousel.vertical .active.right {
-  top: 100%;
+    top: 100%;
 }
 
 .carousel.vertical .item {
@@ -329,22 +331,18 @@ h4{
 
 #Container .mix{
     display: none;
-    width: 25%;
+    width: 100%;
     float: left;
     cursor: pointer;
-    overflow: hidden;
     >img{
         width:100%;
         height: 300px;
-        transition: all .3s ease-out;
-        &:hover{
-            transform: scale(1.1);
-        }
     }
 }
 
 #Container{
     min-height: 600px;
+    overflow: hidden;
 }
 
 #work_pic{
@@ -566,10 +564,6 @@ footer{
         padding: 0;
     }
     span{
-        font-family: "Pacifico", "Open Sans", Arial, Sans-sarif;
-        font-size: 30px;
-        color: #fff;   
-        font-weight: normal;
         display: block;
         margin-bottom: 25px;  
         +p{
@@ -616,5 +610,49 @@ footer{
     margin-top: 30px;
     >p{
         line-height: 0.3;
+    }
+}
+
+.pacifico{
+    font-family: "Pacifico", "Open Sans", Arial, Sans-sarif;
+    font-size: 30px;
+    color: #fff;   
+    font-weight: normal;
+}
+
+.black{
+    font-size: 13px;
+    color: #062033;
+    display: inline;
+}
+
+.footer_end{
+    margin-top:80px;
+    margin-bottom: 40px;
+    font-size: 13px;
+    color: #f0f9f7;
+    line-height: 0.3;
+    border-left: 1px solid rgba(0,0,0,.2);
+    p{
+        padding: 0 0 0 10px;
+    }
+    i{
+        color: rgba(0,0,0,.5);
+    }
+}
+
+.work_popup{
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    width: 25%;
+    p{
+        color: #fff;
+    }
+    .mix{
+        transition: all .3s ease-out;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
