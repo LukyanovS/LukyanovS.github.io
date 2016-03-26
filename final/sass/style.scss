@@ -472,8 +472,8 @@ h4{
 
 .team_social{
     position: absolute;
-    top: 83%;
-    left: 49%;
+    top: 250px;
+    left: 10px;
     opacity: 0;
     -webkit-transition: -webkit-transform 1.5s;
 	transition: transform 1.5s;
@@ -497,4 +497,38 @@ h4{
             background: #000;
         }
     }
+}
+
+#funs{
+    @include bg_i("funs_bg.png");
+    background-size: cover;
+    span{
+        display: block;
+        @include bg_i("heart_bg.png");
+        background-position: center 11px;
+        margin-bottom: 22px;
+    }
+    .funs_icon{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        border: 1px solid #cdcfd1;
+        margin:0 auto 50px;
+        i{
+            font-size: 40px;
+            padding-top: 45px;
+        }
+    }
+}
+
+.funs{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #c0c4c8;
+    font-weight: 100;
+}
+
+#one, #two, #three, #four{
+    font-size: 38px;
+    margin: 0;
 }

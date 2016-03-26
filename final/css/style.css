@@ -1022,3 +1022,43 @@ h4 {
 .team_social > a:hover {
   background: #000;
 }
+
+/* line 502, ../sass/style.scss */
+#funs {
+  background: transparent url(../img/funs_bg.png) no-repeat center center;
+  background-size: cover;
+}
+/* line 505, ../sass/style.scss */
+#funs span {
+  display: block;
+  background: transparent url(../img/heart_bg.png) no-repeat center center;
+  background-position: center 11px;
+  margin-bottom: 22px;
+}
+/* line 511, ../sass/style.scss */
+#funs .funs_icon {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid #cdcfd1;
+  margin: 0 auto 50px;
+}
+/* line 517, ../sass/style.scss */
+#funs .funs_icon i {
+  font-size: 40px;
+  padding-top: 45px;
+}
+
+/* line 524, ../sass/style.scss */
+.funs {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #c0c4c8;
+  font-weight: 100;
+}
+
+/* line 531, ../sass/style.scss */
+#one, #two, #three, #four {
+  font-size: 38px;
+  margin: 0;
+}
