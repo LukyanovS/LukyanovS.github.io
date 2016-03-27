@@ -644,3 +644,25 @@ footer{
         }
     }
 }
+
+.scrollToTop{
+    position:fixed;
+	top:90%;
+	left:2%;
+	display:none;
+    div{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid rgba(5, 19, 82, 0.5);
+        background: rgba(14, 180, 147, 0.58);
+        &:hover{
+            background: #0eb493;
+        }
+        i{
+            padding-top: 13px;
+            color: #fff;
+            font-size: 30px;
+        }
+    }
+}

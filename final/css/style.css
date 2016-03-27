@@ -576,7 +576,7 @@ body {
 h1 {
   font-size: 62px;
   font-weight: 300;
-  margin-top: 400px;
+  margin-top: 453px;
   margin-left: -35px;
 }
 /* line 118, ../sass/style.scss */
@@ -745,7 +745,7 @@ h4 {
 /* line 259, ../sass/style.scss */
 .vertical_carousel {
   position: absolute;
-  top: 75%;
+  top: 55%;
   left: 130%;
   display: block;
   width: 0;
@@ -779,7 +779,7 @@ h4 {
 .carousel.vertical .next {
   padding-left: 30px;
   text-align: center;
-  top: -100%;
+  top: -1100%;
 }
 
 /* line 293, ../sass/style.scss */
@@ -1190,4 +1190,30 @@ footer .div i:hover {
 /* line 642, ../sass/style.scss */
 .work_popup .mix:hover {
   transform: scale(1.1);
+}
+
+/* line 648, ../sass/style.scss */
+.scrollToTop {
+  position: fixed;
+  top: 90%;
+  left: 2%;
+  display: none;
+}
+/* line 653, ../sass/style.scss */
+.scrollToTop div {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgba(5, 19, 82, 0.5);
+  background: rgba(14, 180, 147, 0.58);
+}
+/* line 659, ../sass/style.scss */
+.scrollToTop div:hover {
+  background: #0eb493;
+}
+/* line 662, ../sass/style.scss */
+.scrollToTop div i {
+  padding-top: 13px;
+  color: #fff;
+  font-size: 30px;
 }
