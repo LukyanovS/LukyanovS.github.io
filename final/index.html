@@ -19,6 +19,8 @@
         
         <link rel="stylesheet" href="css/magnific-popup.css">
         
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" type="text/css">
+        
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
         
         <link rel="stylesheet" href="css/animate.css">
@@ -30,7 +32,7 @@
     <body>
        
         <nav class="container-fluid nav">
-            <div class="container navbar-fixed-top">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-6 col-sm-5 col-xs-4 left nav_wrapper">
                         <span class="pacifico">Brandi</span> <b>|</b> <span class="nav_p">I’am your tag line<span>
@@ -38,19 +40,22 @@
                     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 right">
                         <ul>
                             <li>
-                                <a href="#">Contact</a>
+                                <a class="popup-with-form" href="#form">Contact</a>
                             </li>
                             <li>
-                                <a href="#team">Team</a>
+                                <a class="smoothScroll" href="#contact">Find us</a>
                             </li>
                             <li>
-                                <a href="#works">Works</a>
+                                <a class="smoothScroll" href="#team">Team</a>
                             </li>
                             <li>
-                                <a href="#Features">Features</a>
+                                <a class="smoothScroll" href="#works">Works</a>
                             </li>
                             <li>
-                                <a href="#home">Home</a>
+                                <a class="smoothScroll" href="#Features">Features</a>
+                            </li>
+                            <li>
+                                <a class="smoothScroll" href="#home">Home</a>
                             </li>
                         </ul>
                     </div>
@@ -75,12 +80,12 @@
                                     <p>We are a team of professionals</p>
                                 </div>
                                 <div class="item">
-                                    <h1>Meet <span>Brandi</span>!</h1>
+                                    <div class="h1">Meet <span>Brandi</span>!</div>
                                     <h2><span>/creative</span> one page template.</h2>
                                     <p>We are a team of professionals</p>
                                 </div>
                                 <div class="item">
-                                    <h1>Meet <span>Brandi</span>!</h1>
+                                    <div class="h1">Meet <span>Brandi</span>!</div>
                                     <h2><span>/creative</span> one page template.</h2>
                                     <p>We are a team of professionals</p>
                                 </div>
@@ -363,11 +368,21 @@
                 </div>
             </div>
         </footer>
+        
         <a href="#" class="scrollToTop">
             <div>
                 <i class="fa fa-arrow-up"></i>
             </div>
         </a>
+        
+        <form method="post" id="form" class="form white-popup-block mfp-hide" action="php/sendmail.php">
+            <p>Say hello!</p>
+            <label>Full Name: </label><input name="full_name" type="text">
+            <label>Phone Number: </label><input name="phone" type="text">
+            <label>Email: </label><input name="email" type="text">
+            <textarea name="text" placeholder="Enter your message"></textarea>
+            <button type="submit" name="send"><i class="fa fa-envelope-o"></i> Send message</button>
+        </form>
         
         <script src="js/jquery-1.12.1.js"></script>
         
@@ -378,8 +393,6 @@
         <script src="js/jquery.magnific-popup.min.js"></script>
         
         <script src="js/jquery.animateNumber.min.js"></script>
-        
-        <script src="js/wow.js"></script>
         
         <script src="js/app.js"></script>
         

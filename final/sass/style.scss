@@ -1,6 +1,5 @@
 @import "_normalize.scss";
 
-$nav_bg_color: rgba(0,0,51,.2);
 $font: 16;
 $light: 300;
 $bold: 700;
@@ -39,7 +38,13 @@ body{
 }
 
 .nav{
-    background: $nav_bg_color;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    -o-transition: all 0.8s linear;
+    transition: all 0.8s linear;
     span{
         margin-left: 12px;
     }
@@ -64,12 +69,17 @@ body{
         padding: 29px 15px 20px;
         border-top: 2px solid transparent;
         top: 0;
-        &:hover{
+        -webkit-transition: all 0.8s linear;
+        transition: all 0.8s linear;
+        outline: none;
+        &:hover, &:active, &:focus{
             border-color: #32b0ee;
         }
 	}
     .nav_wrapper{
         padding-top: 13px;
+        -webkit-transition: all 0.8s linear;
+        transition: all 0.8s linear;
     }
 }
 
@@ -78,7 +88,7 @@ body{
     padding: 0;
     margin: 0;
     float: right;
-    min-width: 360px;
+    min-width: 432px;
 }
 
 .banner {
@@ -110,10 +120,10 @@ body{
     }
 }
 
-h1 {
+h1, .h1 {
     font-size: $font*3.875+$px;
     font-weight: $light;
-    margin-top: 453+$px;
+    margin-top: 300px;
     margin-left: -35px;
     span {
         font-weight: $bold;
@@ -212,7 +222,7 @@ h4{
     text-align: left;
     padding: 0;
     margin: 0;
-    min-width: 275px;
+    min-width: 273px;
 }
 
 .feature_content{
@@ -258,7 +268,7 @@ h4{
 
 .vertical_carousel{
     position:absolute;
-    top:55%;
+    top:75%;
     left:130%;
     display: block;
     width: 0;
@@ -287,7 +297,7 @@ h4{
 .carousel.vertical .next {
     padding-left:30px;
     text-align:center;
-    top: -1100%;
+    top: -100%;
 }
 
 .carousel.vertical .prev {
@@ -645,6 +655,10 @@ footer{
     }
 }
 
+.mfp-img{
+    width: 500px;
+}
+
 .scrollToTop{
     position:fixed;
 	top:90%;
@@ -654,7 +668,6 @@ footer{
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        border: 2px solid rgba(5, 19, 82, 0.5);
         background: rgba(14, 180, 147, 0.58);
         &:hover{
             background: #0eb493;
@@ -665,4 +678,75 @@ footer{
             font-size: 30px;
         }
     }
+}
+
+.form{
+    width: 430px;
+    text-align: left;
+    color: #000;
+    position: relative;
+    line-height: 2;
+    padding: 10px;
+    border: 2px solid #1EA78D;
+    background-image: radial-gradient(#0eb493, rgba(6, 32, 51, 0.7));
+    border-radius: 5px;
+    margin: 0 auto;
+    p{
+        font-size: 24px;
+        font-weight: 700;
+        color: #062033;
+        text-align: center;
+    }
+    input{
+        width: 70%;
+        float: right;
+        border: 0;
+        border-bottom: 1px solid #A9A9A9;
+        outline: none;
+    }
+    textarea{
+        width: 100%;
+        height: 100px;
+    }
+    button{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 40%;
+        border: 0;
+        background: transparent;
+        i{
+            font-size: 20px;
+            color: #0eb493;
+        }
+    }
+    label{
+        color: #adb1b6;
+        font-size: 13px;
+    }
+    .mfp-close{
+        width: 44px;
+    }
+}
+
+.popup-with-form{
+    
+}
+
+.sticky{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: fixed;
+    background: linear-gradient(90deg, #062033 0%, #156f5e 50%,  #062033 100%);
+    opacity: 0.7;
+    a{
+        padding: 10px 15px 10px;
+    }
+    .nav_wrapper{
+        padding: 0;
+    }
+    
 }
