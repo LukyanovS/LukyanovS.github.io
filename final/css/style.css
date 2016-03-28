@@ -1235,7 +1235,7 @@ footer .div i:hover {
 
 /* line 683, ../sass/style.scss */
 .form {
-  width: 430px;
+  width: 450px;
   text-align: left;
   color: #000;
   position: relative;
@@ -1255,18 +1255,21 @@ footer .div i:hover {
 }
 /* line 700, ../sass/style.scss */
 .form input {
+  padding-left: 5px;
   width: 70%;
   float: right;
   border: 0;
   border-bottom: 1px solid #A9A9A9;
   outline: none;
 }
-/* line 707, ../sass/style.scss */
+/* line 708, ../sass/style.scss */
 .form textarea {
-  width: 100%;
+  resize: none;
+  overflow-y: auto;
+  width: 99%;
   height: 100px;
 }
-/* line 711, ../sass/style.scss */
+/* line 714, ../sass/style.scss */
 .form button {
   float: none;
   display: block;
@@ -1276,22 +1279,22 @@ footer .div i:hover {
   border: 0;
   background: transparent;
 }
-/* line 719, ../sass/style.scss */
+/* line 722, ../sass/style.scss */
 .form button i {
   font-size: 20px;
   color: #0eb493;
 }
-/* line 724, ../sass/style.scss */
+/* line 727, ../sass/style.scss */
 .form label {
   color: #adb1b6;
   font-size: 13px;
 }
-/* line 728, ../sass/style.scss */
+/* line 731, ../sass/style.scss */
 .form .mfp-close {
   width: 44px;
 }
 
-/* line 737, ../sass/style.scss */
+/* line 740, ../sass/style.scss */
 .sticky {
   margin-bottom: 0;
   margin-top: 0;
@@ -1301,11 +1304,18 @@ footer .div i:hover {
   background: linear-gradient(90deg, #062033 0%, #156f5e 50%, #062033 100%);
   opacity: 0.7;
 }
-/* line 745, ../sass/style.scss */
+/* line 748, ../sass/style.scss */
 .sticky a {
   padding: 10px 15px 10px;
 }
-/* line 748, ../sass/style.scss */
+/* line 751, ../sass/style.scss */
 .sticky .nav_wrapper {
   padding: 0;
+}
+
+/* line 757, ../sass/style.scss */
+.error-box {
+  font-size: 11px;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }

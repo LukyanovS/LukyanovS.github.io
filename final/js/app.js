@@ -113,6 +113,109 @@ $(document).ready(function() {
         else{
             $('nav').removeClass("sticky");
         }
-});
+    });
+    
+    $('input#name, input#email, textarea#message').unbind().blur( function(){
+             
+            var id = $(this).attr('id');
+            var val = $(this).val();
+            switch(id)
+            {
+                case 'name':
+                    var rv_name = /^[a-zA-Z]+$/;
+                    if(val.length > 2 && val != '' && rv_name.test(val))
+                    {
+                       $(this).addClass('not_error');
+                       $(this).next('.error-box').text('Accepted')
+                                                 .css('color','green')
+                                                 .animate({'paddingLeft':'10px'},400)
+                                                 .animate({'paddingLeft':'5px'},400);
+                    }
+                    else
+                    {
+                       $(this).removeClass('not_error').addClass('error');
+                       $(this).next('.error-box').html('&bull; The name must be at least two characters')
+                                                  .css('color','red')
+                                                  .animate({'paddingLeft':'10px'},400)
+                                                  .animate({'paddingLeft':'5px'},400);
+                    }
+                break;
+                case 'email':
+                   var rv_email = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
+                   if(val != '' && rv_email.test(val))
+                   {
+                      $(this).addClass('not_error');
+                      $(this).next('.error-box').text('Accepted')
+                                                .css('color','green')
+                                                .animate({'paddingLeft':'10px'},400)
+                                                .animate({'paddingLeft':'5px'},400);
+                   }
+                   else
+                   {
+                      $(this).removeClass('not_error').addClass('error');
+                      $(this).next('.error-box').html('&bull; "Email" field is required (example: 123@gmail.com)')
+                                                 .css('color','red')
+                                                 .animate({'paddingLeft':'10px'},400)
+                                                 .animate({'paddingLeft':'5px'},400);
+                    }
+                break;
+                case 'message':
+                    if(val != '' && val.length < 5000)
+                    {
+                        $(this).addClass('not_error');
+                        $(this).next('.error-box').text('Accepted')
+                                            .css('color','green')
+                                            .animate({'paddingLeft':'10px'},400)
+                                            .animate({'paddingLeft':'5px'},400);
+                    }
+                    else
+                    {
+                    $(this).removeClass('not_error').addClass('error');
+                    $(this).next('.error-box').html('&bull; "Message" field is required')
+                                            .css('color','red')
+                                            .animate({'paddingLeft':'10px'},400)
+                                            .animate({'paddingLeft':'5px'},400);
+                    }
+                break;
+            }
+    });
+
+    $('form#form').submit(function(e){
+        e.preventDefault();
+            if($('.not_error').length == 3)
+            {  
+                $.ajax({
+                    url: 'php/send.php',
+                    type: 'post',
+                    data: $(this).serialize(),
+                    beforeSend: function(xhr, textStatus){ 
+                        $('form#form :input').attr('disabled','disabled');
+                    },
+                    success: function(response){
+                        $('form#form :input').removeAttr('disabled');
+                        $('form#form :text, textarea').val('').removeClass().next('.error-box').text('');
+                        alert(response);
+                    }
+                });
+            }
+            else
+            {
+              return false;
+            }
+    });
+    
+    $('#phone').mask('+00(000)000-00-00');
+    
+    $('#phone').on('focus', function(){
+        var $this = $(this);
+        if($this.val() == '+38(050)123-45-67'){
+            $this.val('+');
+        }
+    }).on('blur', function(){
+        var $this = $(this);
+        if($this.val() == '+'){
+            $this.val('+38(050)123-45-67');
+        }
+    });
 
 });

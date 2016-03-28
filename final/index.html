@@ -375,13 +375,16 @@
             </div>
         </a>
         
-        <form method="post" id="form" class="form white-popup-block mfp-hide" action="php/sendmail.php">
+        <form id="form" class="form white-popup-block mfp-hide">
             <p>Say hello!</p>
-            <label>Full Name: </label><input name="full_name" type="text">
-            <label>Phone Number: </label><input name="phone" type="text">
-            <label>Email: </label><input name="email" type="email">
-            <textarea name="text" placeholder="Enter your message"></textarea>
-            <button type="submit" name="send"><i class="fa fa-envelope-o"></i> Send message</button>
+            <label>Name: </label><input id="name" name="full_name" type="text">
+            <div class="error-box"></div>
+            <label>Email: </label><input id="email" name="email" type="email">
+            <div class="error-box"></div>
+            <label>Phone Number: </label><input id="phone" name="phone" type="text" value="+38(050)123-45-67"><br>
+            <textarea id="message" name="text" placeholder="Enter your message"></textarea>
+            <div class="error-box"></div>
+            <button id="send" type="submit" name="send"><i class="fa fa-envelope-o"></i> Send message</button>
         </form>
         
         <script src="js/jquery-1.12.1.js"></script>
@@ -391,6 +394,8 @@
         <script src="js/jquery.mixitup.min.js"></script>
         
         <script src="js/jquery.magnific-popup.min.js"></script>
+        
+        <script src="js/jquery.mask.min.js"></script>
         
         <script src="js/jquery.animateNumber.min.js"></script>
         
