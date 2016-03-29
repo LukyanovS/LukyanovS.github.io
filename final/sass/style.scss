@@ -401,7 +401,7 @@ h4{
     p {
         position: absolute;
         top: 50%;
-        left: 25%;
+        left: 125px;
         font-size: 18px;
         font-weight: $bold;
 	    padding: 1em 0;
@@ -424,7 +424,7 @@ h4{
         overflow: hidden;
         img{
             width: 270px;
-            height: 300px;
+            height: 270px;
         }
         margin-top: 105px;
         -webkit-filter: grayscale(100%);  
@@ -468,7 +468,7 @@ h4{
 
 .team_social{
     position: absolute;
-    top: 250px;
+    top: 220px;
     left: 10px;
     opacity: 0;
     -webkit-transition: -webkit-transform 1.5s;
@@ -554,13 +554,14 @@ h4{
     
 }
 
+.padding{
+        padding: 0;
+}
+    
 footer{
     background: #1ea78d;
     text-align: left;
     padding-top: 100px;
-    .padding{
-        padding: 0;
-    }
     span{
         display: block;
         margin-bottom: 25px;  
@@ -758,4 +759,14 @@ footer{
     font-size: 11px;
     margin-top: -10px;
     margin-bottom: 10px;
+}
+
+@media only screen and (min-width:1201px) and (max-width:1520px){
+    .effect-sarah p{left:40px}
+    #Container .mix > img{height: 240px}
+    #Container{min-height: 480px}
+}
+
+@media only screen and (min-width:1201px) and (max-width:1200px){
+    
 }

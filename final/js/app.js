@@ -195,7 +195,12 @@ $(document).ready(function() {
                         $('form#form :input').removeAttr('disabled');
                         $('form#form :text, textarea').val('').removeClass().next('.error-box').text('');
                         alert(response);
+                        $(".mfp-close").trigger("click");
+                    },
+                    error: function(){
+                        $(".mfp-close").trigger("click");
                     }
+                    
                 });
             }
             else
