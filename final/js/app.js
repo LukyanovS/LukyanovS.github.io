@@ -239,5 +239,9 @@ $(document).ready(function() {
     
     });
 
-
+    $(window).load(function(){
+        if ($(window).width() < 750){
+           $('.right').css({display:'none'});
+        }
+    });
 });

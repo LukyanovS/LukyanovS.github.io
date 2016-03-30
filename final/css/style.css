@@ -776,14 +776,12 @@ h4 {
 
 /* line 297, ../sass/style.scss */
 .carousel.vertical .next {
-  padding-left: 30px;
   text-align: center;
   top: -100%;
 }
 
 /* line 303, ../sass/style.scss */
 .carousel.vertical .prev {
-  padding-left: 30px;
   text-align: center;
   top: -100%;
 }
@@ -791,7 +789,6 @@ h4 {
 /* line 309, ../sass/style.scss */
 .carousel.vertical .next.left,
 .carousel.vertical .prev.right {
-  padding-left: 30px;
   text-align: center;
   top: 0;
 }
@@ -1356,13 +1353,6 @@ footer .div i:hover {
   }
 }
 
-@media only screen and (max-width: 1500px){
-    .carousel.vertical .next, .carousel.vertical .prev, .carousel.vertical .next.left,
-.carousel.vertical .prev.right{
-        padding: 0;
-    }
-}
-
 @media only screen and (max-width: 1200px){
     .work_popup{
         width: 33%;
@@ -1455,7 +1445,7 @@ footer .div i:hover {
     }
 }
 
-@media only screen and (max-width: 280px){
+@media only screen and (max-width: 320px){
     .nav_p{
         display: none;
     }
