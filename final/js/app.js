@@ -232,9 +232,9 @@ $(document).ready(function() {
     $(window).resize(function(){
         if($(window).width() > 750){
         $('.right').css({display:'block'});
-       
         } else {
-            $('.right').css({display:'none'})
+            $('.right').css({display:'none'});
+            $('.nav_btn i').addClass('fa-bars').removeClass('fa-times');
         }
     
     });

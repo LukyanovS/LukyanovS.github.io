@@ -1454,3 +1454,15 @@ footer .div i:hover {
         width: 60%
     }
 }
+
+@media only screen and (max-width: 280px){
+    .nav_p{
+        display: none;
+    }
+    body, html{
+        overflow-x: hidden;
+    }
+    .nav_wrapper{
+        min-width: 195px;
+    }
+}
