@@ -1324,6 +1324,18 @@ footer .div i:hover {
   font-size: 11px;
   margin-top: -10px;
   margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.nav_btn{
+  display: none;
+  float: right;
+  padding: 20px 10px 5px 10px;
+  cursor: pointer;
+}
+
+.nav_btn i{
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 1520px){
@@ -1384,9 +1396,41 @@ footer .div i:hover {
     }
 }
 
+@media only screen and (min-width: 750px){
+    .right{
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 750px){
     #carousel-example-generic{
         display: none;
+    }
+    #home{
+        padding-top: 100px;
+    }
+    .nav_btn{
+        display: block;
+        margin: 0 !important;
+    }
+    .nav b{
+        margin-left: 5px;
+    }
+    .nav span {
+        margin-left: 5px;
+    }
+    .left{
+        min-width: 244px;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .right ul{
+        width: 260px;
+        float: right;
+    }
+    .nav a{
+        padding: 20px;
     }
 }
 

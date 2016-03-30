@@ -222,5 +222,22 @@ $(document).ready(function() {
             $this.val('+38(050)123-45-67');
         }
     });
+    
+    $('.nav_btn').on('click',function(){
+        'block'==$('.right').css('display')?($('.right').css({display:'none'}),
+        $('.nav_btn i').addClass('fa-bars').removeClass('fa-times')):($('.right').css({display:'block'}),
+        $('.nav_btn i').addClass('fa-times').removeClass('fa-bars'))
+    });
+    
+    $(window).resize(function(){
+        if($(window).width() > 750){
+        $('.right').css({display:'block'});
+       
+        } else {
+            $('.right').css({display:'none'})
+        }
+    
+    });
+
 
 });
