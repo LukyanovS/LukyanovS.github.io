@@ -69,7 +69,7 @@ body, html, *{
 #head h1{
     color: #ff7634;
     text-align: center;
-    font: bold 35px 'Quicksand', sans-serif;
+    font: normal 35px 'Quicksand', sans-serif;
 }
 
 #head p{
