@@ -1,0 +1,119 @@
+body, html, *{
+    font-family: 'Jura', 'Open Sans Condensed', sans-serif;
+}
+
+.content{
+    margin: 0 auto;
+    width: 990px;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+#nav{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    -o-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 70px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu li {
+    display: inline-block;    
+    text-align: center;
+    margin: 15px 0px;
+    float: left;
+}
+
+.menu a{
+    color: #c5602e;
+    padding: 10px 39px;
+    border-bottom: solid 3px transparent;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.button{
+    background: transparent url(../img/nav_but.png) no-repeat center center;
+}
+
+.menu a:hover{
+    background: rgba(255, 117, 50, 0.1);
+    border-bottom: solid 3px #ff7532;
+}
+
+#head{
+    background: transparent url(../img/Header_bg.png) no-repeat center center;
+    background-size: cover;
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    padding: 198px 0 90px;
+    
+}
+
+#head h1{
+    color: #ff7634;
+    text-align: center;
+    font: normal 35px 'Quicksand', sans-serif;
+}
+
+#head p{
+    color: #A5A09D;
+    text-align: center;
+    padding: 10px 0 145px; 
+    font: normal 18px 'Quicksand', sans-serif;
+}
+
+#logo{ 
+    -webkit-animation-name: logo; 
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-duration: 6s; 
+    animation-name: logo;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    -webkit-transform-style: preserve-3d; 
+    -moz-transform-style: preserve-3d; 
+    -ms-transform-style: preserve-3d; 
+    transform-style: preserve-3d;
+}
+
+@-webkit-keyframes logo{ 
+    from{ 
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg); 
+        -ms-transform: rotateY(0deg); 
+        transform: rotateY(0deg);
+    } 
+    to{ 
+        -webkit-transform: rotateY(-360deg); 
+        -moz-transform: rotateY(-360deg); 
+        -ms-transform: rotateY(-360deg); 
+        transform: rotateY(-360deg);
+    } 
+} 
+
+.block_3{
+    width: 33%;
+}
+ 
+h2{
+    
+}
