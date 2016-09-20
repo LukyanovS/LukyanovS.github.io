@@ -2,8 +2,6 @@ body, html, *{
     font-family: 'Jura', 'Open Sans Condensed', sans-serif;
 }
 
-<<<<<<< HEAD
-=======
 .clearfix:after {
     content: ".";
     display: block;
@@ -12,7 +10,6 @@ body, html, *{
     visibility: hidden;
 }
 
->>>>>>> refs/remotes/origin/GoIT
 .content{
     margin: 0 auto;
     width: 990px;
@@ -89,10 +86,7 @@ body, html, *{
     text-align: center;
     padding: 10px 0 145px; 
     font: normal 18px 'Quicksand', sans-serif;
-<<<<<<< HEAD
-=======
     margin-bottom: 0;
->>>>>>> refs/remotes/origin/GoIT
 }
 
 #logo{ 
@@ -124,9 +118,6 @@ body, html, *{
         transform: rotateY(-360deg);
     } 
 } 
-<<<<<<< HEAD
- 
-=======
 
 .block_3{
     width: 33%;
@@ -187,4 +178,3 @@ h2{
     color: #fff;
     font-size: 17px;
 }
->>>>>>> refs/remotes/origin/GoIT
