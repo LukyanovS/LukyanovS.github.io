@@ -2,6 +2,17 @@ body, html, *{
     font-family: 'Jura', 'Open Sans Condensed', sans-serif;
 }
 
+<<<<<<< HEAD
+=======
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+>>>>>>> refs/remotes/origin/GoIT
 .content{
     margin: 0 auto;
     width: 990px;
@@ -78,6 +89,10 @@ body, html, *{
     text-align: center;
     padding: 10px 0 145px; 
     font: normal 18px 'Quicksand', sans-serif;
+<<<<<<< HEAD
+=======
+    margin-bottom: 0;
+>>>>>>> refs/remotes/origin/GoIT
 }
 
 #logo{ 
@@ -109,4 +124,67 @@ body, html, *{
         transform: rotateY(-360deg);
     } 
 } 
+<<<<<<< HEAD
  
+=======
+
+.block_3{
+    width: 33%;
+}
+
+#works{
+    background: #1d1c1c;
+}
+
+h2{
+    text-align: center;
+    font-size: 22px;
+    color: #f88750;
+    padding: 65px 0 15px;
+    margin: 0;
+}
+
+.mark{
+    font-size: 21px;
+    padding-bottom: 15px;
+    line-height: 27px;
+}
+
+.big_quad {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 28px solid;
+    border-right: 28px solid transparent;
+    color: #f68d46;
+    float: left;
+    width: 0;
+    height: 0;
+}
+
+.quad {
+    content: '';
+    width: 10px;
+    height: 28px;
+    background: #f68d46;
+    float: left;
+    -webkit-transform: skew(-45deg);
+	-moz-transform: skew(-45deg);
+    -o-transform: skew(-45deg);
+    margin-right: 13px;
+}
+
+.mark p {
+    padding: 0 60px 0 10px;
+    display: block;
+    float: left;
+    background: #f68d46;
+    border-radius: 5px 0 0 0;
+    margin: 0;
+}
+
+.mark span{
+    color: #fff;
+    font-size: 17px;
+}
+>>>>>>> refs/remotes/origin/GoIT
