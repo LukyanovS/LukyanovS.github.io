@@ -125,6 +125,7 @@ body, html, *{
 
 #works{
     background: #1d1c1c;
+    position: relative;
 }
 
 h2{
@@ -177,4 +178,60 @@ h2{
 .mark span{
     color: #fff;
     font-size: 17px;
+}
+
+.work {
+    position: relative;
+    width: 2022px;
+    height: 210px;
+    padding: 0;
+}
+
+
+.work li {
+    margin-right: 20px;
+    float: left;
+    display: inline;
+    list-style: none;
+}
+
+.work li a{
+    width: 317px;
+    height: 195px;
+    display: flex;
+    border-bottom: 5px solid #f68d46;
+    text-decoration: none;
+}
+
+.work li a img {
+    width: 100%;
+}
+
+.work li p{
+    text-align: center;
+    text-transform: uppercase;
+    color: #b15724;
+    background: #151515;
+    margin: 0;
+    font-size: 17px;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+
+.uli {
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.uli::-webkit-scrollbar-thumb{
+    background-color:#ff7937;
+    border-radius: 15px;
+}
+
+.uli::-webkit-scrollbar {
+    max-width: 20px;
+    width: 20px;
+    height: 10px;
+    border-radius: 25px;
+    background: #151515;
 }
