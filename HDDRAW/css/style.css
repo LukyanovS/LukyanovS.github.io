@@ -199,8 +199,24 @@ h2{
     width: 317px;
     height: 195px;
     display: flex;
-    border-bottom: 5px solid #f68d46;
     text-decoration: none;
+    position: relative;
+}
+
+.work li a .hov1{
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.work li a:hover .hov1{
+    opacity: 0.3;
+}
+
+.work li a:hover .hov2{
+    visibility: visible;
+    width: auto;
 }
 
 .work li a img {
@@ -216,6 +232,19 @@ h2{
     font-size: 17px;
     line-height: 35px;
     margin-bottom: 25px;
+    border-top: 5px solid #f68d46;
+}
+
+.hov1{
+    z-index: 1;
+}
+
+.hov2{
+    z-index: 2;
+    visibility: hidden;
+    position: absolute;
+    top: 40%;
+    left: 40%;
 }
 
 .uli {
