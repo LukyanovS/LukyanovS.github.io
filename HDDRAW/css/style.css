@@ -2,6 +2,14 @@ body, html, *{
     font-family: 'Jura', 'Open Sans Condensed', sans-serif;
 }
 
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
 .content{
     margin: 0 auto;
     width: 990px;
@@ -136,6 +144,7 @@ body, html, *{
     text-align: center;
     padding: 10px 0 145px; 
     font: normal 18px 'Quicksand', sans-serif;
+    margin-bottom: 0;
 }
 
 #logo{ 
@@ -167,4 +176,149 @@ body, html, *{
         transform: rotateY(-360deg);
     } 
 } 
- 
+
+.block_3{
+    width: 33%;
+}
+
+#works{
+    background: #1d1c1c;
+    position: relative;
+}
+
+h2{
+    text-align: center;
+    font-size: 22px;
+    color: #f88750;
+    padding: 65px 0 15px;
+    margin: 0;
+}
+
+.mark{
+    font-size: 21px;
+    padding-bottom: 15px;
+    line-height: 27px;
+}
+
+.big_quad {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 28px solid;
+    border-right: 28px solid transparent;
+    color: #f68d46;
+    float: left;
+    width: 0;
+    height: 0;
+}
+
+.quad {
+    content: '';
+    width: 10px;
+    height: 28px;
+    background: #f68d46;
+    float: left;
+    -webkit-transform: skew(-45deg);
+	-moz-transform: skew(-45deg);
+    -o-transform: skew(-45deg);
+    margin-right: 13px;
+}
+
+.mark p {
+    padding: 0 60px 0 10px;
+    display: block;
+    float: left;
+    background: #f68d46;
+    border-radius: 5px 0 0 0;
+    margin: 0;
+}
+
+.mark span{
+    color: #fff;
+    font-size: 17px;
+}
+
+.work {
+    position: relative;
+    width: 2022px;
+    height: 210px;
+    padding: 0;
+}
+
+
+.work li {
+    margin-right: 20px;
+    float: left;
+    display: inline;
+    list-style: none;
+}
+
+.work li a{
+    width: 317px;
+    height: 195px;
+    display: flex;
+    text-decoration: none;
+    position: relative;
+}
+
+.work li a .hov1{
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.work li a:hover .hov1{
+    opacity: 0.3;
+}
+
+.work li a:hover .hov2{
+    visibility: visible;
+    width: auto;
+}
+
+.work li a img {
+    width: 100%;
+}
+
+.work li p{
+    text-align: center;
+    text-transform: uppercase;
+    color: #b15724;
+    background: #151515;
+    margin: 0;
+    font-size: 17px;
+    line-height: 35px;
+    margin-bottom: 25px;
+    border-top: 5px solid #f68d46;
+}
+
+.hov1{
+    z-index: 1;
+}
+
+.hov2{
+    z-index: 2;
+    visibility: hidden;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.uli {
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.uli::-webkit-scrollbar-thumb{
+    background-color:#ff7937;
+    border-radius: 15px;
+}
+
+.uli::-webkit-scrollbar {
+    max-width: 20px;
+    width: 20px;
+    height: 10px;
+    border-radius: 25px;
+    background: #151515;
+}
